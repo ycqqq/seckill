@@ -1,3 +1,11 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: qyc
+ * Date: 2017/11/17
+ * Time: 上午9:11
+ */
+?>
 @include('admin/header')
 <div class="container">
     <!-- Static navbar -->
@@ -16,3 +24,4 @@
     </div>
 </div>
 @include('admin/footer')
+

@@ -11,6 +11,18 @@
 |
 */
 
-Route::get('/admin', function () {
-    return view('admin/index');
+Route::get('/admin', 'Admin\AdminController@index');
+
+Route::get('/login', 'Admin\Auth\LoginController@index');
+Route::post('/admin/login', 'Admin\Auth\LoginController@login');
+Route::get('/admin/logout', 'Admin\Auth\LoginController@logout');
+
+Route::get('/sign', 'Admin\Auth\SignController@index');
+Route::post('/admin/sign','Admin\Auth\SignController@sign');
+
+
+Route::get('/admin/active', 'Admin\Active\ActiveController@index');
+
+Route::get('/test', function (){
+    dd(Hash::make(123));
 });
