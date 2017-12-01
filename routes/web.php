@@ -21,7 +21,7 @@ Route::get('/sign', 'Admin\Auth\SignController@index');
 Route::post('/admin/sign','Admin\Auth\SignController@sign');
 
 
-Route::get('/admin/active', 'Admin\Active\ActiveController@index');
+Route::get('/admin/goods', 'Admin\Goods\GoodsController@index');
 
 Route::get('/test', function (){
     dd(Hash::make(123));

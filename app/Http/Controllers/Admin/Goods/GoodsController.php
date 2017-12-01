@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Admin\Active;
+namespace App\Http\Controllers\Admin\Goods;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class ActiveController extends Controller
+class GoodsController extends Controller
 {
     public function __construct()
     {
@@ -16,6 +16,6 @@ class ActiveController extends Controller
     {
         $name = $request->get('token_name');
 
-        return view('admin.active', ['name' => $name]);
+        return view('admin.goods', ['name' => $name]);
     }
 }

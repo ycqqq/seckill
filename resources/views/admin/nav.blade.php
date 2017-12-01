@@ -14,7 +14,6 @@
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li class="{{Request::is('admin')?'active':''}}"><a href="{{url('/admin')}}">主页</a></li>
-                <li class="{{Request::is('admin/active')?'active':''}}"><a href="{{url('/admin/active')}}">活动</a></li>
                 <li class="{{Request::is('admin/goods')?'active':''}}"><a href="{{url('/admin/goods')}}">商品</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
