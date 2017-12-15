@@ -23,10 +23,10 @@ Route::post('/admin/sign','Admin\Auth\SignController@sign');
 
 Route::get('/admin/goods', 'Admin\Goods\GoodsController@index');
 
-Route::get('/test', function (){
-    dd(Hash::make(123));
-});
-
-Route::get('/', function (){
-    return redirect()->route('home');
-});
+//Route::get('/test', function (){
+//    dd(Hash::make(123));
+//});
+//
+//Route::get('/', function (){
+//    return redirect()->route('home');
+//});
