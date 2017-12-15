@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/admin', 'Admin\AdminController@index');
+Route::get('/admin', 'Admin\AdminController@index')->name('home');
 
 Route::get('/login', 'Admin\Auth\LoginController@index');
 Route::post('/admin/login', 'Admin\Auth\LoginController@login');
@@ -23,6 +23,10 @@ Route::post('/admin/sign','Admin\Auth\SignController@sign');
 
 Route::get('/admin/goods', 'Admin\Goods\GoodsController@index');
 
-Route::get('/test', function (){
-    dd(Hash::make(123));
-});
+//Route::get('/test', function (){
+//    dd(Hash::make(123));
+//});
+//
+//Route::get('/', function (){
+//    return redirect()->route('home');
+//});
