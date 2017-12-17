@@ -30,3 +30,7 @@ Route::get('/admin/goods', 'Admin\Goods\GoodsController@index');
 //Route::get('/', function (){
 //    return redirect()->route('home');
 //});
+
+Route::get('/', function (){
+    return view('web.ms');
+});

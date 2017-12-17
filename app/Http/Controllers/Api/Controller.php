@@ -21,7 +21,8 @@ class Controller extends BaseController
 
     public function get()
     {
-        return \Cache::get('count');
+        return 'qyc:'.rand(0,100);
+//        return \Cache::get('count');
     }
 
     public function set()
