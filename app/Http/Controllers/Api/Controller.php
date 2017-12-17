@@ -13,7 +13,8 @@ class Controller extends BaseController
         if (\Cache::get('count') < 0) return 0;
 
         if (\Cache::decrement('count') >= 0) {
-            return microtime(true) - LARAVEL_START;
+//            return microtime(true) - LARAVEL_START;
+            return 1;
         }
 
         return 0;
