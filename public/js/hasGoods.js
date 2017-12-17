@@ -1,2 +1,2 @@
-var hasGood = false;
-var msUrl = '';
+var hasGood = true;
+var msUrl = '/api/kill';
